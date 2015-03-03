@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Is stileapp.com bad at XHR?</title>
+    <style type='text/css'>
+        iframe.pinger {
+            display: none;
+        }
+
+        #results th{
+            font-weight: bold;
+        }
+    </style>
+    <script type='text/javascript' src='/ping/stats.js'></script>
+</head>
+<body>
+    <iframe class='pinger' origin='github' src='/ping/pinger-stile-nginx.html'></iframe>
+
+    <table id='results'>
+        <thead>
+            <tr>
+                <th>Origin</th>
+                <th>Pings</th>
+                <th>Successful</th>
+                <th>Failure (total)</th>
+                <th>Failure (timeout)</th>
+                <th>Failure (connection)</th>
+            </tr>
+        </thead>
+        <tbody id='results-tbody'>
+        </tbody>
+    </table>
+</body>
+</html>
