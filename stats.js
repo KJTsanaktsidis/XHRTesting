@@ -32,6 +32,9 @@ document.addEventListener('DOMContentLoaded', function (ev){
                     totalNode.innerText = (nTotal + 1).toString();
                     failureNode.innerText = (nFailure + 1).toString();
                     timeoutNode.innerText = (nTimeout + 1).toString();
+                } else if (ev.data && ev.data.type === 'unknownFailure') {
+                    totalNode.innerText = (nTotal + 1).toString();
+                    failureNode.innerText = (nFailure + 1).toString();
                 }
             }
         });
